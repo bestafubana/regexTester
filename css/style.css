@@ -1,0 +1,97 @@
+body{
+	//background-color: #979d9e;
+	color:#7f8c99;
+	background-image: url("../images/bg.png");
+	background-repeat: repeat;
+	font-family: Consolas,Monaco,"Courier New",monospace;
+}
+
+a{
+	color:#c7a86a;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+span{
+	margin: 5px 10px;
+	background-color: grey;
+	color: black;
+	padding:3px 4px;
+	border: 1px solid;
+	float:left;
+}
+
+span img{
+	line-height:21px;
+	vertical-align: sub;
+}
+
+#footer{
+	text-align:center;
+	font-size:0.8em;
+	margin: 40px 0px 0px 0px;
+}
+
+.green{
+	background-color: #399200;
+	color: #83f03c;
+	border-color: #58e000;
+}
+
+.red{
+	background-color: #a61300;
+	color: #ff5640;
+	border-color: #ff1e00;
+}
+
+fieldset{
+	border: 1px solid #768799;
+	width:100%;
+	padding:0px;
+	margin-top:20px;
+}
+
+#wrapper{
+	width:75%;
+	background-color: #232a32;
+	margin:0px auto;
+	padding:20px;
+	border: 1px solid #0d1824;
+	
+	//shadow - got from css-tricks.com
+	-moz-box-shadow:    2px 2px 4px 5px #333;
+  	-webkit-box-shadow: 2px 2px 4px 5px #333;
+  	box-shadow:         2px 2px 4px 5px #333;
+}
+
+#output{
+	background-color: #1d2126;
+	border: 1px solid #768799;
+	width:100%;
+	height:300px;
+	margin-top:5px;
+	overflow:auto;
+}
+
+p{
+	color:#906716;
+}
+
+label{
+	color:#c7a86a;
+}
+
+input{
+	margin:10px;
+}
+
+input[type=button] {
+	display:block
+}
+
+#remover{
+	margin: 30px 0px 0px 0px;
+}

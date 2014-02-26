@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Regex Tester</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<img src="images/regexlogo.png" alt="logo">
+		</div>
+	 	
+	 	<div id="content">
+
+			<p>Add the words you want to test with your regex and press the analyze button</p>
+
+
+			<fieldset>
+				<legend>Test words</legend>
+				<input type="text" id="word" required/><label for="word"> The words to be tested</label>
+				<input type="button" id="adder" value="Add" />
+			</fieldset>
+
+			<input type="button" id="remover" value="Remove all words" />
+		
+			<div id="output">
+			</div>
+
+			<fieldset>
+				<legend>Pattern</legend>
+				<input type="text" id="pattern" required autofocus /><label for="pattern"> Your regular expression pattern</label>
+				<input type="button" id="analyzer" value="Analyze" />
+			</fieldset>
+		</div>
+		
+		<div id="footer">
+			<p>Coded by <a href="http://">Natanael Silva</a></p>
+			<a href="http://twitter.com/njsj" target="_blank"><img src="images/twit.png" alt="twitter"></a>
+			<a href="https://www.facebook.com/natanael.silva.jr" target="_blank"><img src="images/fb.png" alt="facebook"></a>
+			<a href="https://github.com/bestafubana" target="_blank"><img src="images/git.png" alt="github"></a>
+		</div>
+		
+	</div>
+  	<script type="text/javascript" src="js/regex.js"></script>
+</body>
+</html>
