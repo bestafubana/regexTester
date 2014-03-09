@@ -1,3 +1,7 @@
+/* Coded by Natanael Silva - just for fun
+*	https://github.com/bestafubana
+*/
+
 	var reg;
 	var list = new Array();
 
