@@ -15,8 +15,13 @@
 
 			<p>Add the words you want to test with your regex and press the analyze button</p>
 
-
 			<fieldset>
+				<legend>Pattern</legend>
+				<input type="text" id="pattern" required autofocus /><label for="pattern"> Your regular expression pattern</label>
+				<input type="button" id="analyzer" value="Analyze" />
+			</fieldset>	
+
+			<fieldset id="inputWordsContainer">
 				<legend>Test words</legend>
 				<input type="text" id="word" required/><label for="word"> The words to be tested</label>
 				<input type="button" id="adder" value="Add" />
@@ -26,12 +31,7 @@
 		
 			<div id="output">
 			</div>
-
-			<fieldset>
-				<legend>Pattern</legend>
-				<input type="text" id="pattern" required autofocus /><label for="pattern"> Your regular expression pattern</label>
-				<input type="button" id="analyzer" value="Analyze" />
-			</fieldset>
+			<p>Pattern loaded: <label id="regDisplay"></label></p>
 		</div>
 		
 		<div id="footer">

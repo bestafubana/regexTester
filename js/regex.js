@@ -5,23 +5,19 @@
 	var reg;
 	var list = new Array();
 
-(function(analyzeId, addId, patternId, wordId, wordsId, removerId){
+(function(analyzeId, addId, patternId, wordId, wordsId, removerId, regDisplayId){
 	var wordHTML = "<span class=\"word\">*</span>"
-//	var wordHTML = "<span class=\"word\">*<img src=\"images/close-red.png\" alt=\"close\"/></span>"
 	
-	function setRegex(pattern, global, caseSensitive){
+	function setRegex(pattern, caseSensitive){
 		var modifier = "";
-		
-		if(global){
-			modifier = "g";
-		}
 		
 		if(!caseSensitive){
 			modifier += "i";
 		}
 		
 		reg = new RegExp(pattern, modifier);
-		
+		document.getElementById(regDisplayId).innerHTML = pattern;
+
 		testInput();
 	}
 
@@ -48,6 +44,18 @@
 	function addElement(element){
 		list.push(element);
 		document.getElementById(wordsId).innerHTML += wordHTML.replace("\*", element);
+
+		if(!reg){
+
+			var tmpPattern = document.getElementById(patternId).value;
+			if(!tmpPattern){
+				tmpPattern = "."; //any pattern
+			}
+			setRegex(tmpPattern);
+		}
+
+		testInput();
+		
 		//list.sort();
 		//populateOutput();
 	}
@@ -83,4 +91,4 @@
 																removeAllElements();
 															}, false);														
 	
-})("analyzer", "adder","pattern", "word", "output", "remover");
+})("analyzer", "adder","pattern", "word", "output", "remover", "regDisplay");
